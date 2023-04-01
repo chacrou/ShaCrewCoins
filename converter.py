@@ -15,10 +15,15 @@ def avaible():
 @client.request
 def get_balance(argument1, argument2):
     if  argument2 == 'scc':
-        my_balance = f.read_json(argument1)
-        my_balance = my_balance[0]
-        my_balance = my_balance["balance"]
-        return my_balance
+        users = f.read_json("utilisateur")
+        user = argument1 in users
+        if user == True:
+            my_balance = f.read_json(argument1)
+            my_balance = my_balance[0]
+            my_balance = my_balance["balance"]
+            return my_balance
+        else:
+            return 'You need to use to ShaCrewCoins'
 @client.request
 
 def set_balance(argument1, argument2):
