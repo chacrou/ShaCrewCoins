@@ -2,7 +2,7 @@ from tkinter.messagebox import YES
 import scratchattach as scratch3
 import Fonctions as f
 
-session = scratch3.Session(".eJxVj0trwzAQhP-Lzq1rybIl59bkUEqhAVNoexKrh235Ibm2TCCl_70S5JLTLt_sDLO_aN_M6mA26IBOPajV7-gBCdhDL5IkrI5KzUlV8CKPUjBbUN6PNjkufh2NvjdIUKNxyZWYccEqCNa77CZsWWOW6QaPt-OY6-MSTUQqXBNdQl7XlCnNpWaKYllJDoYW5HAtxfBSkJ_j-ePU5Mp2b8P5Sy-i-XyNMZPvrHu0S0rCJMOYZiSOmqaSE7huhy41b9cI9BCBF8HO5updws-zWWO1p3dzEd_xufvXetj6eFTyClRJgQGj0NaYt5pw0IrlhWmlxpppzGSVo79_3q5xlw:1pSYz9:LaYT1p_uAAaNgEydXPeX4MWjRCY", username="Chacrou") #replace with your session_id and username
+session = scratch3.Session("", username="Chacrou") #replace with your session_id and username
 conn = session.connect_cloud("805013764") #replace with your project id
 client = scratch3.CloudRequests(conn)
 print('ShaCrewCoins')
